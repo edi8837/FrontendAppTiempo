@@ -1,0 +1,38 @@
+<div class="ListarProcutos">
+    <H1 style="text-align:center">Calcular Tiempos</H1>
+    <h1 id={{nombreProducto}}>Nombre del Producto: {{nombreProducto}}</h1>
+    <label>ingrese la cantidad Productos</label>
+    <div class="input-group mb-3" >
+        <input type="number" id="cantidad"   [(ngModel)]="cantidad" class="form-control"  id="cantidad"  aria-describedby="button" />
+        <button class="btn btn-outline-primary" type="button" id="button-addon2" mdbRipple rippleColor="danger" onclick="capture()"
+            (click)="Calcular()">
+            Calcular
+        </button>
+    </div>
+    <div class="form-group">
+       <label><h1>Tiempo de construcción en metalmecánica</h1></label>
+       <br>
+       <label id="construcción">El Tiempo es de: {{tiempoS1}}</label>
+    </div>
+    <div class="form-group">
+        <label><h1>Tiempo de galvanizado</h1></label>
+        <br>
+        <label id="galvanizado">El Tiempo es de: {{tiempoS2}}</label>
+      
+    </div>
+    <div  class="form-group">
+        <label><h1>Tiempo de armado</h1></label>
+        <br>
+        <label id="tiempoS3">El Tiempo es de: {{tiempoS3}}</label>
+      
+    </div>
+    <div  class="form-group">
+        <label><h1>Tiempo final</h1></label>
+        <br>
+        <label id="final">El Tiempo es de: {{tiempoS4}}</label>
+      
+    </div>
+
+    <script type="text/javascript" src="./File/datos.js"></script>
+
+</div>

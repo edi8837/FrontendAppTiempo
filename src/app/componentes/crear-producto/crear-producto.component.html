@@ -1,0 +1,31 @@
+<div class="formularioRegistro">
+    <h1 style="text-align:center">Crear Producto</h1>
+    <form [formGroup]="productoForm" (ngSubmit)="guardar()">
+        <div class="form-group">
+
+            <label>Nombre del Producto</label>
+            <input matInput type="text" formControlName="nombre" class="form-control">
+        </div>
+        <div class="form-group">
+
+            <label>Tiempo de construcción en metalmecánica (minutos)</label>
+            <input matInput type="number" formControlName="tiempo1" class="form-control">
+        </div>
+        <div class="form-group">
+
+            <label>Tiempo de galvanizado (minutos)</label>
+            <input matInput type="number" formControlName="tiempo2" class="form-control">
+        </div>
+        <div class="form-group">
+
+            <label>Tiempo de armado (minutos)</label>
+            <input matInput type="number" formControlName="tiempo3" class="form-control">
+        </div>
+        <div style="text-align:center" class="form-group">
+
+            <button type="submit" class="btn btn-outline-success">Guardar</button>
+        </div>
+        
+
+    </form>
+</div>

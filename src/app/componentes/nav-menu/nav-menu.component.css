@@ -1,0 +1,23 @@
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler .fa-bars {
+  color: rgb(30, 133, 218);
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler .fa-bars {
+  color: #020202;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+  background-color: rgb(173, 36, 36);
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}

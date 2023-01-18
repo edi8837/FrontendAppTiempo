@@ -1,0 +1,27 @@
+<div class="ListarProcutos">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+            <th>Nombre</th>
+            <th>Tiempo de construcción</th> 
+            <th>Tiempo de galvanizado</th>
+            <th>Tiempo de armado</th>
+            <th>Obciones</th>
+           
+        </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of Productos">
+                <td>{{item.nombre}}</td>
+                <td>{{item.tiempo1}}</td>
+                <td>{{item.tiempo2}}</td>
+                <td>{{item.tiempo3}}</td>
+                <td>
+                    <button type="button" class="btn btn-outline-success" (click)="Calcular(item.id)">Calcular</button>
+                    <button type="button" class="btn btn-outline-danger" (click)="Eliminar(item)">Eliminar</button>
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+</div>
