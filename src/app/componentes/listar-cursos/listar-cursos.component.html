@@ -1,0 +1,31 @@
+<div class="ListarCu">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+            <th>Codigo</th>
+            <th>Descripcion</th> 
+            <th>Horas</th>
+            <th>Inicio</th>
+            <th>Fin</th>
+            <th>Cupos</th>
+            <th>Accion</th>
+           
+        </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of Cursos">
+                <td>{{item.codigoCurso}}</td>
+                <td>{{item.descripcion}}</td>
+                <td>{{item.horas}}</td>
+                <td>{{item.fechaInicio}}</td>
+                <td>{{item.fechaFin}}</td>
+                <td>{{item.cupos}}</td>
+                
+                <td>
+                    <button type="button" class="btn btn-outline-danger" (click)="Eliminar(item)">Eliminar</button>
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+</div>

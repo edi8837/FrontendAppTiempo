@@ -1,0 +1,42 @@
+<div class="formularioRegistro">
+    <h1 style="text-align:center">Crear Curso</h1>
+    <form [formGroup]="CursoForm" (ngSubmit)="guardar()">
+        <div class="form-group">
+
+            <label>Codigo Curso</label>
+            <input matInput type="text" formControlName="codigoCurso" class="form-control">
+        </div>
+        <div class="form-group">
+
+            <label>Descripcion</label>
+            <input matInput type="text" formControlName="descripcion" class="form-control">
+        </div>
+        <div class="form-group">
+
+            <label>Horas</label>
+            <input matInput type="text" formControlName="horas" class="form-control">
+        </div>
+        <div class="form-group">
+
+            <label>Fecha Inicio</label>
+            <input matInput type="text" formControlName="fechaInicio" class="form-control">
+        </div>
+        <div class="form-group">
+
+            <label>Fecha Fin</label>
+            <input matInput type="text" formControlName="fechaFin" class="form-control">
+        </div>
+        <div class="form-group">
+
+            <label>Cupos</label>
+            <input matInput type="number" formControlName="cupos" class="form-control">
+        </div>
+
+        <div style="text-align:center" class="form-group">
+
+            <button type="submit" class="btn btn-outline-success">Guardar</button>
+        </div>
+        
+
+    </form>
+</div>

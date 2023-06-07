@@ -55,7 +55,9 @@
               "namedChunks": true
             }
           },
-          "defaultConfiguration": "production"
+          "defaultConfiguration": "production",
+          "proxyConfig": "proxy.conf.json"
+
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
@@ -72,7 +74,9 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "AppTiempo1:build"
+
+            "browserTarget": "AppTiempo1:build",
+            "proxyConfig": "proxy.conf.json" 
           }
         },
         "test": {
@@ -94,7 +98,7 @@
           }
         }
       }
-    }
+    } 
   },
   "cli": {
     "analytics": "660e4e89-3e25-426e-8963-80c452956032"

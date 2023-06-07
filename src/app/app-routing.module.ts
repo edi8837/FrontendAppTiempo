@@ -1,15 +1,25 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CalcularTiempoComponent } from './componentes/calcular-tiempo/calcular-tiempo.component';
-import { CrearProductoComponent } from './componentes/crear-producto/crear-producto.component';
+
 import { HomeComponent } from './componentes/home/home.component';
-import { ListarProductoComponent } from './componentes/listar-producto/listar-producto.component';
+import { CrearCursoComponent } from './componentes/crear-curso/crear-curso.component';
+import { CrearEstudianteComponent } from './componentes/crear-estudiante/crear-estudiante.component';
+import { ListarCursosComponent } from './componentes/listar-cursos/listar-cursos.component';
+import { CatalogoComponent } from './componentes/catalogo/catalogo.component';
+import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
+import { InscribirComponent } from './componentes/inscribir/inscribir.component';
+import { RegistroUserComponent } from './componentes/registro-user/registro-user.component';
 
 const routes: Routes = [
-  { path: '', component: CrearProductoComponent},
-  { path: 'Ruta1', component: CrearProductoComponent},
-  { path: 'Ruta2', component: ListarProductoComponent},
-  { path: 'Ruta3/:id', component: CalcularTiempoComponent},
+  { path: '', component: IniciarSesionComponent},
+  { path: 'Ruta2', component: ListarCursosComponent},
+  { path: 'Ruta1', component: CatalogoComponent},
+  { path: 'Ruta3', component: CrearEstudianteComponent},
+  { path: 'Ruta4', component: CrearCursoComponent},
+  { path: 'Ruta5', component: IniciarSesionComponent},
+  { path: 'Ruta6', component: InscribirComponent},
+  { path: 'Ruta7', component: RegistroUserComponent},
+  
 ];
 
 @NgModule({
